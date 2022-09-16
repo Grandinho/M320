@@ -1,0 +1,7 @@
+C:\GitHub\M320\M320_Block2\01Vererbung\bin\Debug\Vererbung.exe.config
+C:\GitHub\M320\M320_Block2\01Vererbung\bin\Debug\Vererbung.exe
+C:\GitHub\M320\M320_Block2\01Vererbung\bin\Debug\Vererbung.pdb
+C:\GitHub\M320\M320_Block2\01Vererbung\obj\Debug\01 Vererbung.csprojAssemblyReference.cache
+C:\GitHub\M320\M320_Block2\01Vererbung\obj\Debug\01 Vererbung.csproj.CoreCompileInputs.cache
+C:\GitHub\M320\M320_Block2\01Vererbung\obj\Debug\Vererbung.exe
+C:\GitHub\M320\M320_Block2\01Vererbung\obj\Debug\Vererbung.pdb
