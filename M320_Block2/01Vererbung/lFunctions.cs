@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Vererbung
 {
-    interface lFunctions
+    public interface lFunctions
     {
         double m_Lohn { get; set; }
-        void Lohnerhoehung(double d);
     }
 }

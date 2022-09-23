@@ -29,12 +29,7 @@ namespace Vererbung
         }
 
 
-        public void Lohnerhoehung(double d)
-        {
-            double dAlterLohn = m_Lohn;
-            double dNeuerLohn = dAlterLohn / 100 * (100 + d);
-            m_Lohn = dNeuerLohn;
-        }
+
 
     }
 }

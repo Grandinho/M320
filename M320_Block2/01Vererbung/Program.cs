@@ -33,8 +33,9 @@ namespace Vererbung
             Politiker po11 = new Politiker("Brunner", "Toni", 100000, "SVP", "Nationalrat");
             Politiker po12 = new Politiker("Höltschi", "Pius", 6000, "SVP", "Kantonsrat");
             //
-            m1.Lohnerhoehung(1.20);
-            po12.Lohnerhoehung(2.50);
+            Funktionen.Lohnerhoehung(m1,1.20);
+            Funktionen.Lohnerhoehung(po12,2.50);
+
             //
             m1.Datenausgabe();
             m2.Datenausgabe();

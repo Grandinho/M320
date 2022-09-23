@@ -31,11 +31,7 @@ namespace Vererbung
             Console.WriteLine(" Lohn:" + m_Lohn+ ", Firma:" + m_Firma);
         }
 
-        public void Lohnerhoehung(double d)
-        {
-            double dAlterLohn = m_Lohn;
-            double dNeuerLohn = dAlterLohn / 100 * (100 + d);
-            m_Lohn = dNeuerLohn;
-        }
+
+
     }
 }
