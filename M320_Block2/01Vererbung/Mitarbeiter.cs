@@ -5,52 +5,37 @@ using System.Text;
 
 namespace Vererbung
 {
-    public class Mitarbeiter
+    public class Mitarbeiter : Person, lFunctions
     {
-        //Membervariablen
-        private string m_Name;
-        private string m_Vorname;
-        private double m_Lohn;
-        private string m_Firma;
+        //props
+        public string m_Firma { get; set; }
+        public double m_Lohn { get; set; }
+
         //Konstruktoren
-        public Mitarbeiter(string Name, string Vorname) {
-            setName(Name);
-            setVorname(Vorname);
-        }
-        public Mitarbeiter(string Name, string Vorname, double Lohn, string firma) {
-            setName(Name);
-            setVorname(Vorname);
-            setLohn(Lohn);
-            setFirma(firma);
-        }
-        public string getName() {
-            return m_Name;
-        }
-        public void setName(string value) {
-            m_Name = value;
-        }
-        public string getVorname()  {
-            return m_Vorname;
-        }
-        public void setVorname(string value) {
-            m_Vorname = value;
-        }
-        public double getLohn()  {
-            return m_Lohn;
-        }
-        public void setLohn(double value) {
-            m_Lohn = value;
-        }
-        public string getFirma() {
-            return m_Firma;
-        }
-        public void setFirma(string value) {
-            m_Firma = value;
-        }
-        public void Datenausgabe()
+        public Mitarbeiter(string Name, string Vorname) : base(Name, Vorname)
         {
-            Console.Write("Name und Vorname: " + getName() + ", " + getVorname());
-            Console.WriteLine(" Lohn:" +getLohn()+ ", Firma:" +getFirma());
+            this.m_Name = Name;
+            this.m_Vorname = Vorname;
+        }
+        public Mitarbeiter(string Name, string Vorname, double Lohn, string firma) : base(Name, Vorname)
+        {
+            this.m_Name = Name;
+            this.m_Vorname = Vorname;
+            this.m_Lohn = Lohn;
+            this.m_Firma = firma;
+        }
+ 
+        public override void Datenausgabe()
+        {
+            Console.Write("Name und Vorname: " + m_Name + ", " + m_Vorname);
+            Console.WriteLine(" Lohn:" + m_Lohn+ ", Firma:" + m_Firma);
+        }
+
+        public void Lohnerhoehung(double d)
+        {
+            double dAlterLohn = m_Lohn;
+            double dNeuerLohn = dAlterLohn / 100 * (100 + d);
+            m_Lohn = dNeuerLohn;
         }
     }
 }

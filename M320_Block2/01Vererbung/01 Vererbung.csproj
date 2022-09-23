@@ -54,8 +54,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Funktionen.cs" />
+    <Compile Include="lFunctions.cs" />
     <Compile Include="Mitarbeiter.cs" />
     <Compile Include="Parteimitglied.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Politiker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

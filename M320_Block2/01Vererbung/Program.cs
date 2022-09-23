@@ -13,8 +13,9 @@ namespace Vererbung
             Mitarbeiter m1 = new Mitarbeiter("Kunigunde", "Hugentobler", 4800.00, "Roche");
             Mitarbeiter m2 = new Mitarbeiter("Adelheit", "Joggenmoser", 6200.00, "Siemens");
             Mitarbeiter m3 = new Mitarbeiter("Melchior", "Käser");
-            m3.setLohn(5900.00);
-            m3.setFirma("Roche");
+
+            m3.m_Lohn = 5900.00;
+            m3.m_Firma = "Roche";
             //Parteimitglieder
             Parteimitglied pm1 = new Parteimitglied("Blocher", "Christoph", "SVP");
             Parteimitglied pm2 = new Parteimitglied("Brunner", "Heidi", "FDP");
@@ -32,8 +33,8 @@ namespace Vererbung
             Politiker po11 = new Politiker("Brunner", "Toni", 100000, "SVP", "Nationalrat");
             Politiker po12 = new Politiker("Höltschi", "Pius", 6000, "SVP", "Kantonsrat");
             //
-            Funktionen.Lohnerhoehung(m1, 1.20);
-            Funktionen.Lohnerhoehung(po12, 2.50);
+            m1.Lohnerhoehung(1.20);
+            po12.Lohnerhoehung(2.50);
             //
             m1.Datenausgabe();
             m2.Datenausgabe();

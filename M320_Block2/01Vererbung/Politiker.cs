@@ -5,59 +5,36 @@ using System.Text;
 
 namespace Vererbung
 {
-    public class Politiker
+    public class Politiker : Parteimitglied, lFunctions
     {
         //Membervariablen
-        private string m_Name;
-        private string m_Vorname;
-        private double m_Lohn;
-        private string m_Partei = null;
-        private string m_Rat = null;
+        public double m_Lohn { get; set; }
+        public string m_Rat { get; set; }
         //Konstruktoren
-        public Politiker(string Name, string Vorname, double l, string p, string r) {
-            setName(Name);
-            setVorname(Vorname);
-            setLohn(l);
-            setPartei(p);
-            setRat(r);
+        public Politiker(string Name, string Vorname, double l, string p, string r): base(Name, Vorname, p) {
+            this.m_Name = Name;
+            this.m_Vorname = Vorname;
+            this.m_Lohn = l;
+            this.m_Partei = p;
+            this.m_Rat = r;
         }
-        public Politiker(string Name, string Vorname) {
-            setName(Name);
-            setVorname(Vorname);
+        public Politiker(string Name, string Vorname) : base(Name, Vorname) {
+            this.m_Name = Name;
+            this.m_Vorname = Vorname;
         }
-        public string getName() {
-            return m_Name;
+        
+        public override void Datenausgabe() {
+            Console.Write("Name und Vorname: " + m_Name + " " + m_Vorname);
+            Console.WriteLine(", Lohn:" + m_Lohn + ", Rat: " + m_Rat);
         }
-        public void setName(string value) {
-            m_Name = value;
+
+
+        public void Lohnerhoehung(double d)
+        {
+            double dAlterLohn = m_Lohn;
+            double dNeuerLohn = dAlterLohn / 100 * (100 + d);
+            m_Lohn = dNeuerLohn;
         }
-        public string getVorname()  {
-            return m_Vorname;
-        }
-        public void setVorname(string value) {
-            m_Vorname = value;
-        }
-        public double getLohn() {
-            return m_Lohn;
-        }
-        public void setLohn(double value) {
-            m_Lohn = value;
-        }
-        public string getPartei() {
-            return m_Partei;
-        }
-        public void setPartei(string value) {
-            m_Partei = value;
-        }
-        public string getRat() {
-            return m_Rat;
-        }
-        public void setRat(string value) {
-            m_Rat = value;
-        }
-        public void Datenausgabe() {
-            Console.Write("Name und Vorname: " + getName() + " " + getVorname());
-            Console.WriteLine(", Lohn:" + getLohn() + ", Rat: " + getRat());
-        }
+
     }
 }
