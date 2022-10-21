@@ -21,8 +21,7 @@ namespace Vererbung
 
         public virtual void Datenausgabe()
         {
-            
-
+        
         } 
 
     }

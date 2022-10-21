@@ -20,7 +20,7 @@ namespace Vererbung
             Parteimitglied pm1 = new Parteimitglied("Blocher", "Christoph", "SVP");
             Parteimitglied pm2 = new Parteimitglied("Brunner", "Heidi", "FDP");
             //Politiker
-            Politiker po1 = new Politiker("Maurer", "Ueli", 33000, "SVP", "Bundesrat");
+            Person po1 = new Politiker("Maurer", "Ueli", 33000, "SVP", "Bundesrat");
             Politiker po2 = new Politiker("Cassis", "Ignazio", 33000, "FDP", "Bundesrat");
             Politiker po3 = new Politiker("Amherd", "Voila", 33000, "Mitte", "Bundesrat");
             Politiker po4 = new Politiker("Sommaruga", "Simmonetta", 33000, "SP", "Bundesrat");

@@ -1,0 +1,7 @@
+C:\GitHub\M320\M320_Probetest\Probetest\Probetest\bin\Debug\Probetest.exe.config
+C:\GitHub\M320\M320_Probetest\Probetest\Probetest\bin\Debug\Probetest.exe
+C:\GitHub\M320\M320_Probetest\Probetest\Probetest\bin\Debug\Probetest.pdb
+C:\GitHub\M320\M320_Probetest\Probetest\Probetest\obj\Debug\Probetest.csprojAssemblyReference.cache
+C:\GitHub\M320\M320_Probetest\Probetest\Probetest\obj\Debug\Probetest.csproj.CoreCompileInputs.cache
+C:\GitHub\M320\M320_Probetest\Probetest\Probetest\obj\Debug\Probetest.exe
+C:\GitHub\M320\M320_Probetest\Probetest\Probetest\obj\Debug\Probetest.pdb
